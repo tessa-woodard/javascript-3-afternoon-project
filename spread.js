@@ -17,9 +17,8 @@ let product = {
   imageUrl: 'https://i.ebayimg.com/images/g/9T4AAOSwbmdZf2jN/s-l640.jpg'
 }
 
-// code here
-
-
+const productCopy = {...product}
+console.log(productCopy)
 
 
 ////////// PROBLEM 2 //////////
@@ -28,7 +27,8 @@ let product = {
 
 let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
-// code here
+const colorsCopy = [...colors]
+console.log(colorsCopy)
 
 
 
@@ -43,7 +43,8 @@ function addNums(num1, num2, num3) {
   return num1 + num2 + num3;
 }
 
-// code here
+const result = addNums(...numbers)
+console.log = result
 
 
 ////////// PROBLEM 4 //////////
@@ -53,4 +54,5 @@ function addNums(num1, num2, num3) {
 let arr1 = ['dog', 'chameleon', 'monkey'];
 let arr2 = ['bear', 'tiger', 'liger'];
 
-// code here
+const combinedArrays = [...arr1, ...arr2]
+console.log(combinedArrays)
